@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "232747546812",
+    "firebase_url": "https://mamafua-d6233.firebaseio.com",
+    "project_id": "mamafua-d6233",
+    "storage_bucket": "mamafua-d6233.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232747546812:android:9bd25eb066696432",
+        "android_client_info": {
+          "package_name": "com.example.alex.fua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232747546812-c85nfponc0hrjljnesgusmqr33qim5jo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alex.fua",
+            "certificate_hash": "2c74a4c21bf872f93c49501b2551790782fb325e"
+          }
+        },
+        {
+          "client_id": "232747546812-12kafr2l6tan2n0e8t43eqkg2dh2427u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC64QjoOvVC7ESN6NsFfETLrNZfXkEw1mM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232747546812-12kafr2l6tan2n0e8t43eqkg2dh2427u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

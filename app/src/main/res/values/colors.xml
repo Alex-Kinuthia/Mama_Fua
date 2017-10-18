@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <!--Splashscreen Theme Colors-->
+    <color name="splashColorPrimary">#182328</color>
+    <color name="splashColorPrimaryDark">#182328</color>
+    <color name="splashColorAccent">#E96505</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#383838</color>
+    <color name="lightGrey">#BDBDBD</color>
+</resources>
