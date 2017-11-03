@@ -35,7 +35,7 @@ import java.util.Map;
 
 public class WasherSettingsActivity extends AppCompatActivity {
 
-    private EditText mNameField, mPhoneField, mCarField;
+    private EditText mNameField, mPhoneField;
 
 
     private Button mBack, mConfirm;
@@ -48,7 +48,6 @@ public class WasherSettingsActivity extends AppCompatActivity {
     private String userID;
     private String mName;
     private String mPhone;
-    private String mCar;
     private String mService;
     private String mProfileImageUrl;
 
@@ -65,7 +64,7 @@ public class WasherSettingsActivity extends AppCompatActivity {
 
         mNameField = (EditText) findViewById(R.id.name);
         mPhoneField = (EditText) findViewById(R.id.phone);
-        mCarField = (EditText) findViewById(R.id.car);
+
 
         mProfileImage = (ImageView) findViewById(R.id.profileImage);
 
@@ -76,7 +75,7 @@ public class WasherSettingsActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         userID = mAuth.getCurrentUser().getUid();
-        mDriverDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(userID);
+        mDriverDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child("Washers").child(userID);
 
         getUserInfo();
 
@@ -118,21 +117,11 @@ public class WasherSettingsActivity extends AppCompatActivity {
                         mPhone = map.get("phone").toString();
                         mPhoneField.setText(mPhone);
                     }
-                    if(map.get("car")!=null){
-                        mCar = map.get("car").toString();
-                        mCarField.setText(mCar);
-                    }
                     if(map.get("service")!=null){
                         mService = map.get("service").toString();
                         switch (mService){
                             case"UberX":
                                 mRadioGroup.check(R.id.UberX);
-                                break;
-                            case"UberBlack":
-                                mRadioGroup.check(R.id.UberBlack);
-                                break;
-                            case"UberXl":
-                                mRadioGroup.check(R.id.UberXl);
                                 break;
                         }
                     }
@@ -154,14 +143,13 @@ public class WasherSettingsActivity extends AppCompatActivity {
     private void saveUserInformation() {
         mName = mNameField.getText().toString();
         mPhone = mPhoneField.getText().toString();
-        mCar = mCarField.getText().toString();
 
         int selectId = mRadioGroup.getCheckedRadioButtonId();
 
         final RadioButton radioButton = (RadioButton) findViewById(selectId);
 
         if (radioButton.getText() == null){
-            return;
+            return ;
         }
 
         mService = radioButton.getText().toString();
@@ -169,7 +157,6 @@ public class WasherSettingsActivity extends AppCompatActivity {
         Map userInfo = new HashMap();
         userInfo.put("name", mName);
         userInfo.put("phone", mPhone);
-        userInfo.put("car", mCar);
         userInfo.put("service", mService);
         mDriverDatabase.updateChildren(userInfo);
 

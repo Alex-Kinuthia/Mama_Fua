@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="Mama Fua"
                 android:layout_marginTop="60dp"
-                android:textColor="@color/colorIcons"
+                android:textColor="@color/colorPrimary"
                 android:textAlignment="center"
                 android:textSize="32dp"/>
 
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:textColor="@color/colorIcons"
+                    android:textColor="@color/colorPrimary"
                     android:background="@drawable/login_btn_bg"
                     android:text="@string/action_sign_in"
                     android:textStyle="bold" />
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
                     android:layout_gravity="end"
-                    android:textColor="@color/colorIcons"
+                    android:textColor="@color/colorPrimary"
                     android:text="Dont Have Account? Sign Up"/>
             </LinearLayout>
         </RelativeLayout>

@@ -7,16 +7,16 @@
     tools:context="com.example.alex.fua.MainActivity"
     android:orientation="vertical">
 
-    <ImageView
+    <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:id="@+id/logo"
-        android:src="@drawable/fua"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/radioGroup"
-        android:layout_alignEnd="@+id/radioGroup"
-        android:paddingRight="7dp"
-        android:paddingLeft="7dp" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120px"
+        android:layout_marginTop="20dp"
+        android:text="MAMA FUA"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="italic" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,26 +25,24 @@
         android:id="@+id/selectView"
         android:textSize="20sp"
         android:textColor="#000000"
-        android:layout_below="@+id/logo"
+        android:layout_below="@+id/text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="60dp" />
 
     <Button
-        android:id="@+id/washer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:paddingBottom="20px"
-        android:text="I'm a Washer" />
+        android:layout_marginTop="200px"
+        android:text="I'm a Washer"
+        android:id="@+id/washer"/>
 
     <Button
         android:id="@+id/customer"
+        android:layout_marginTop="200px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="20px"
-        android:paddingTop="20px"
         android:text="I'm a Customer" />
 
 </LinearLayout>

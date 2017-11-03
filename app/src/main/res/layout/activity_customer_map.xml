@@ -93,18 +93,9 @@ android:layout_gravity="bottom">
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="UberX"
+            android:text="Washer"
             android:id="@+id/UberX"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UberBlack"
-            android:id="@+id/UberBlack"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="UberXl"
-            android:id="@+id/UberXl"/>
+
     </RadioGroup>
 
     <Button
@@ -112,6 +103,7 @@ android:layout_gravity="bottom">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="call Washer"
+        android:background="@color/colorPrimary"
         android:id="@+id/request"/>
 </LinearLayout>
 </LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fua</string>
+    <string name="app_name">mamafua</string>
     <string name="title_activity_washer_map">Map</string>
     <string name="title_activity_main2">Main2Activity</string>
 
@@ -7,7 +7,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
-
+    <string name="title_activity_your_location">Your Location</string>
+    <string name="title_activity_view_available">Available Requests</string>
+    <string name="title_activity_view_rider_location">View Rider Location</string>
     <string name="prompt_uname">User Name</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
