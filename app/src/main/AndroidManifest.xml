@@ -56,7 +56,9 @@
         <activity
             android:name=".CustomerMapActivity"
             android:label="@string/title_activity_customer_map" />
-        <activity android:name=".ViewAvailable"></activity>
+        <activity android:name=".ViewAvailable" />
+        <activity android:name=".WelomeWasherActivity" />
+        <activity android:name=".WelcomeCusomerActivity"></activity>
     </application>
 
 </manifest>

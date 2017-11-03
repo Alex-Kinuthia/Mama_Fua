@@ -49,7 +49,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CustomerMapActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener {
+public class CustomerMapActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener  {
 
     private GoogleMap mMap;
     GoogleApiClient mGoogleApiClient;

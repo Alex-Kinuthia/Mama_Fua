@@ -14,7 +14,7 @@ import com.google.firebase.auth.FirebaseUser;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
