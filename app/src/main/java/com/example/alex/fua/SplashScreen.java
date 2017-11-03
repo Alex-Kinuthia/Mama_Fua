@@ -17,7 +17,6 @@ import android.widget.TextView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import com.example.alex.fua.R;
 
 
 public class SplashScreen extends AppCompatActivity {
@@ -35,7 +34,7 @@ public class SplashScreen extends AppCompatActivity {
         Typeface man = Typeface.createFromAsset(getAssets(),"fonts/Lato-Regular.ttf");
             mText.setTypeface(man);
         final ImageView imageView = (ImageView) findViewById(R.id.busrot);
-        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.antirotate1);
+        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.antirotate);
         final Animation animation_2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.rotate);
 
 
