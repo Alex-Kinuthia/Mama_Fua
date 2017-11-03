@@ -13,13 +13,12 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.chris.tatusafety.UI.LoginActivity;
-import com.chris.tatusafety.UI.Welcome_Activity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-import static com.chris.tatusafety.R.id.imageView;
+import com.example.alex.fua.R;
+
 
 public class SplashScreen extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
@@ -36,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
         Typeface man = Typeface.createFromAsset(getAssets(),"fonts/Lato-Regular.ttf");
             mText.setTypeface(man);
         final ImageView imageView = (ImageView) findViewById(R.id.busrot);
-        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.antirotate);
+        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.antirotate1);
         final Animation animation_2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.rotate);
 
 
@@ -98,7 +97,7 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 finish();
-                Intent i = new Intent(getBaseContext(), Welcome_Activity.class);
+                Intent i = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(i);
             }
 
